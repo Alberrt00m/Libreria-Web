@@ -19,7 +19,7 @@ dentro del codigo SB se uso las siguientes dependiencias:
 - spring-boot-starter-test - para hacer pruebas de manera segura
 # FINAL DE DOCUMENTACION
 
-# HORAS PRESTADAS AL PROYECTO: 3.5h
+# HORAS PRESTADAS AL PROYECTO: 7.1h
 
 
 
