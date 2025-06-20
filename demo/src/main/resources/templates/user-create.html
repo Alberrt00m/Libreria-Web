@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create User</title>
+</head>
+<body>
+    <h1>Create New User</h1>
+    <div th:if="${errorMessage}" th:text="${errorMessage}" style="color:red;"></div>
+    <form th:action="@{/users/create}" th:object="${user}" method="post">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" th:field="*{name}" />
+        </div>
+        <div>
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" th:field="*{lastName}" />
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" th:field="*{phone}" />
+        </div>
+        <div>
+            <label for="bookId">Book:</label>
+            <select id="bookId" name="bookId">
+                <option th:each="book : ${books}" th:value="${book.id}" th:text="${book.title}">Book Title</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Create</button>
+        </div>
+    </form>
+    <a href="/users/list">Back to List</a>
+</body>
+</html>

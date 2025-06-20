@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error</title>
+</head>
+<body>
+    <h1>An Error Occurred</h1>
+    <p th:text="${errorMessage}">An unexpected error occurred. Please try again later.</p>
+    <!-- Displaying more details if available (e.g., from a custom error controller) -->
+    <!--
+    <p th:if="${status}" th:text="'Status: ' + ${status}"></p>
+    <p th:if="${error}" th:text="'Error: ' + ${error}"></p>
+    <p th:if="${message}" th:text="'Message: ' + ${message}"></p>
+    <p th:if="${timestamp}" th:text="'Timestamp: ' + ${timestamp}"></p>
+    <p th:if="${path}" th:text="'Path: ' + ${path}"></p>
+    -->
+    <a href="/">Go to Homepage</a>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Error - Not Found</title>
+</head>
+<body>
+    <h1>404 - Page Not Found</h1>
+    <p th:text="${errorMessage}">Default error message if not provided by controller.</p>
+    <p>Sorry, the page you are looking for does not exist.</p>
+    <a href="/">Go to Homepage</a>
+</body>
+</html>
